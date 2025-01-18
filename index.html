@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran Nusa Rempah</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        height: 80vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("/source/video.gif") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .menu-item img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .promo-section {
+        background-color: #f8f9fa;
+        padding: 4rem 0;
+      }
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 3rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Nusa Rempah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang Kami</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservasi">Reservasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#informasi">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda">
+      <div class="hero-section">
+        <div class="container text-center">
+          <h1 class="display-4">Selamat Datang di Nusa Rempah</h1>
+          <p class="lead">Nikmati Kelezatan Masakan Rempah Nusantara</p>
+          <a href="#menu" class="btn btn-primary btn-lg">Lihat Menu</a>
+        </div>
+      </div>
+
+      <!-- Video Trailer -->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="ratio ratio-16x9">
+              <img
+                src="/source/promo.gif"
+                alt="Video Trailer"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo Section -->
+      <div class="promo-section">
+        <div class="container">
+          <h2 class="text-center mb-4">Promo Spesial</h2>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="/source/promo1.jpg"
+                  class="card-img-top"
+                  alt="Promo 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Paket Keluarga</h5>
+                  <p class="card-text">
+                    Diskon 20% untuk paket keluarga setiap hari Minggu
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="/source/promo2.jpg"
+                  class="card-img-top"
+                  alt="Promo 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Happy Hour</h5>
+                  <p class="card-text">
+                    Diskon 15% untuk makan siang (11.00 - 14.00)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="/source/promo3.jpg"
+                  class="card-img-top"
+                  alt="Promo 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Paket Meeting</h5>
+                  <p class="card-text">
+                    Paket meeting lengkap mulai dari Rp 50.000/orang
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Tentang Kami</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="/source/logo.jpg"
+              alt="Restoran Kami"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Nusa Rempah</h3>
+            <p>
+              Restoran Nusa Rempah hadir sejak tahun 1990 dengan komitmen
+              menghadirkan cita rasa masakan rempah Nusantara yang autentik.
+              Kami menggunakan resep turun temurun dan bahan-bahan berkualitas
+              terbaik untuk menjaga keaslian rasa masakan Nusantara.
+            </p>
+            <p>
+              Dengan pengalaman lebih dari 30 tahun, kami telah melayani
+              berbagai acara seperti pernikahan, gathering, dan acara corporate
+              dengan pelayanan yang profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Menu Favorit</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card menu-item">
+              <img
+                src="/source/rendang.jpg"
+                alt="Rendang"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rendang Sapi</h5>
+                <p class="card-text">
+                  Daging sapi yang dimasak dengan bumbu rendang khas Nusantara
+                </p>
+                <p class="card-text"><strong>Rp 45.000</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card menu-item">
+              <img src="/source/ayam.jpg" alt="Ayam Pop" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Ayam Pop</h5>
+                <p class="card-text">
+                  Ayam rebus yang digoreng dengan bumbu khusus
+                </p>
+                <p class="card-text"><strong>Rp 35.000</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card menu-item">
+              <img
+                src="/source/ikan.jpg"
+                alt="Gulai Ikan"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gulai Ikan Kakap</h5>
+                <p class="card-text">
+                  Ikan kakap segar dengan kuah gulai khas Nusantara
+                </p>
+                <p class="card-text"><strong>Rp 50.000</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservasi -->
+    <section id="reservasi" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Reservasi</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="telepon" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="tanggal" class="form-label"
+                  >Tanggal Reservasi</label
+                >
+                <input type="date" class="form-control" id="tanggal" required />
+              </div>
+              <div class="mb-3">
+                <label for="jumlah-meja" class="form-label">Jumlah Meja</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="jumlah-meja"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="jenis-reservasi" class="form-label"
+                  >Jenis Reservasi</label
+                >
+                <select class="form-select" id="jenis-reservasi" required>
+                  <option value="">Pilih Jenis Reservasi</option>
+                  <option value="umum">Umum</option>
+                  <option value="pernikahan">Pesta Pernikahan</option>
+                  <option value="meeting">Meeting</option>
+                  <option value="gathering">Gathering</option>
+                  <option value="ulang-tahun">Ulang Tahun</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Kirim Reservasi
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informasi -->
+    <section id="informasi" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Informasi</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h3>Fasilitas</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fas fa-wifi me-2"></i>
+                WiFi Gratis
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-parking me-2"></i>
+                Parkir Luas
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-praying-hands me-2"></i>
+                Musholla
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-tv me-2"></i>
+                Ruang VIP dengan TV
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h3>Jenis Event</h3>
+            <div class="accordion" id="eventAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#pernikahan"
+                  >
+                    Pesta Pernikahan
+                  </button>
+                </h2>
+                <div id="pernikahan" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    Kapasitas hingga 500 orang dengan dekorasi dan paket
+                    catering lengkap.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#meeting"
+                  >
+                    Meeting
+                  </button>
+                </h2>
+                <div id="meeting" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Ruang meeting dengan kapasitas 10-50 orang, dilengkapi
+                    proyektor dan sound system.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#tahun"
+                  >
+                    Ulang Tahun
+                  </button>
+                </h2>
+                <div id="tahun" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Staff kami berdedikasi tinggi untuk memberikan pelayan yang
+                    terbaik.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#gathering"
+                  >
+                    Gathering
+                  </button>
+                </h2>
+                <div id="gathering" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Ruang gathering yang nyaman, dilengkapi AC dan Toilet
+                    sendiri.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hubungi Kami -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Hubungi Kami</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h3>Lokasi Kami</h3>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i>Jl. Malaka No.3, Jakarta
+              Barat
+            </p>
+            <p><i class="fas fa-phone me-2"></i>(021) 1234-5678</p>
+            <p><i class="fas fa-envelope me-2"></i>info@padangnusantara.com</p>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9536851315243!2d106.80819381137395!3d-6.136925193824324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f602144b38cb%3A0xbb31a14c5ccd1b15!2sITB%20SWADHARMA!5e0!3m2!1sen!2sid!4v1737178050599!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h3>Formulir Kontak</h3>
+            <form>
+              <div class="mb-3">
+                <label for="kontak-nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="kontak-nama"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="kontak-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="kontak-email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="kontak-subjek" class="form-label">Subjek</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="kontak-subjek"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="kontak-pesan" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="kontak-pesan"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h4>Nusa Rempah</h4>
+            <p>
+              Menghadirkan cita rasa autentik masakan Nusantara untuk berbagai
+              acara spesial Anda.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h4>Jam Operasional</h4>
+            <p>Senin - Minggu<br />10:00 - 22:00 WIB</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h4>Media Sosial</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/agung.dharmasaputra.96"
+                class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/agungdhr/"
+                class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://x.com/VentusCast58810" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4 border-light" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2025 Nusa Rempah. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Add active class to navbar items on scroll
+      window.addEventListener("scroll", function () {
+        let sections = document.querySelectorAll("section");
+        let navLinks = document.querySelectorAll(".nav-link");
+
+        sections.forEach((section) => {
+          let top = section.offsetTop - 100;
+          let bottom = top + section.offsetHeight;
+          let scroll = window.scrollY;
+          let id = section.getAttribute("id");
+
+          if (scroll >= top && scroll < bottom) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === "#" + id) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
