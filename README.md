@@ -1,3 +1,3 @@
 # uas-sistem
 
-Cuman file UAS
+Cuman file UAS mata kuliah pemrograman sistem
